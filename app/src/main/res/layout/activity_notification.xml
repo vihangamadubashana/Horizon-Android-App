@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/wave"
+        android:fontFamily="serif"
+        android:paddingVertical="65dp"
+        android:text="Notifications"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="343dp"
+        android:layout_height="310dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNotification"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#0099ff"
+        android:drawableLeft="@drawable/baseline_notifications_24"
+        android:ems="10"
+        android:text="NOTIFICATIONS"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+
+    <ImageView
+        android:layout_width="191dp"
+        android:layout_height="167dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/notification" />
+
+
+</LinearLayout>

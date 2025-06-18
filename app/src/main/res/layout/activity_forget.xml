@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forget">
+
+    <!-- "Forget Password" title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="235dp"
+        android:background="@drawable/wave"
+        android:paddingVertical="70dp"
+        android:text="Forget Password"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <!-- "Your Email" label -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Email"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366" />
+
+
+    <!-- Email input field -->
+    <EditText
+        android:id="@+id/F_email"
+        android:layout_width="352dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:ems="10"
+        android:hint="Enter your Email"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- "New Password" label -->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Password"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511" />
+
+
+    <!-- New Password input field -->
+    <EditText
+        android:id="@+id/F_password"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Enter your new Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- "Confirm Password" label -->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="133dp"
+        android:layout_height="21dp"
+        android:text="Confirm Password"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
+
+    <!-- Confirm Password input field -->
+    <EditText
+        android:id="@+id/F_confirm"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Enter your new Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/btn_login2"
+        android:layout_width="194dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="604dp"
+        android:backgroundTint="#0099ff"
+        android:text="Reset"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945"
+        tools:ignore="UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

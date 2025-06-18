@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_3">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/blue"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_3"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:expandedTitleMarginTop="400dp"
+            app:titleTextColor="@color/white">
+
+            <ImageView
+                android:layout_width="317dp"
+                android:layout_height="204dp"
+                android:layout_gravity="center|end"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/mihisara"
+                app:layout_collapseMode="parallax" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="25dp"
+                android:text="Mihisara Resort"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="643dp"
+        android:background="@drawable/layout_bg"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="5000dp">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="362dp"
+                android:layout_height="179dp"
+                android:layout_marginTop="40dp"
+                android:text="Conveniently situated in the Anuradhapura Town part of Anuradhapura, this property puts you close to attractions and interesting dining options. Don't leave before paying a visit to the famous Anuradhapura Airport. This 3-star property is packed with in-house facilities to improve the quality and joy of your stay."
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="212dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="52dp"
+                android:drawableLeft="@drawable/baseline_home_24"
+                android:drawablePadding="12sp"
+                android:text="262A Sarwodaya Mawatha Nelumkulama, New Kandy Rd, Anuradhapura  "
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:layout_width="131dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/baseline_local_phone_24"
+                android:drawablePadding="12sp"
+                android:gravity="center"
+                android:text=" 071 780 0717"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="117dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:background="#00DFFB"
+                android:gravity="center"
+                android:text="1 night, 2 adults
+                LKR 13,684/="
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/l21"
+                android:layout_width="164dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#0099ff"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:ems="10"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="location"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

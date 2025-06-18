@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyMobileApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".notification"
+            android:exported="false" />
+        <activity
+            android:name=".Forget"
+            android:exported="false" />
+        <activity
+            android:name=".Nw_selection"
+            android:exported="false" />
+        <activity
+            android:name=".Nc_selection"
+            android:exported="false" />
+        <activity
+            android:name=".North_selection"
+            android:exported="false" />
+        <activity
+            android:name=".Eastern_selection"
+            android:exported="false" />
+        <activity
+            android:name=".Central_selection"
+            android:exported="false" />
+        <activity
+            android:name=".Uva_selection"
+            android:exported="false" />
+        <activity
+            android:name=".Sabaragamuwa_selection"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCMxGF16aZQ4945mja6qpulWkRwb1wkWYA" />
+
+        <activity
+            android:name=".Map"
+            android:exported="false"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name=".Eastern_lowest"
+            android:exported="false" />
+        <activity
+            android:name=".Eastern_middle"
+            android:exported="false" />
+        <activity
+            android:name=".Eastern_highest"
+            android:exported="false" />
+        <activity
+            android:name=".North_central_middle"
+            android:exported="false" />
+        <activity
+            android:name=".North_central_lowest"
+            android:exported="false" />
+        <activity
+            android:name=".North_central_highest"
+            android:exported="false" />
+        <activity
+            android:name=".North_wes_lowest"
+            android:exported="false" />
+        <activity
+            android:name=".North_wes_middle"
+            android:exported="false" />
+        <activity
+            android:name=".North_wes_highest"
+            android:exported="false" />
+        <activity
+            android:name=".Uva_middle"
+            android:exported="false" />
+        <activity
+            android:name=".Uva_lowest"
+            android:exported="false" />
+        <activity
+            android:name=".uva_highest"
+            android:exported="false" />
+        <activity
+            android:name=".North_middle"
+            android:exported="false" />
+        <activity
+            android:name=".North_lowest"
+            android:exported="false" />
+        <activity
+            android:name=".North_highest"
+            android:exported="false" />
+        <activity
+            android:name=".location_tracking"
+            android:exported="false" />
+        <activity
+            android:name=".aboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".wes_middle"
+            android:exported="false" />
+        <activity
+            android:name=".western_hotel"
+            android:exported="false" />
+        <activity
+            android:name=".wes_lowest"
+            android:exported="false" />
+        <activity
+            android:name=".southern_middle"
+            android:exported="false" />
+        <activity
+            android:name=".southern_lowest"
+            android:exported="false" />
+        <activity
+            android:name=".southern_highest"
+            android:exported="false" />
+        <activity
+            android:name=".sign_up"
+            android:exported="false" />
+        <activity
+            android:name=".selection_southern"
+            android:exported="false" />
+        <activity
+            android:name=".selection"
+            android:exported="false" />
+        <activity
+            android:name=".sabaragamuwa_lowest"
+            android:exported="false" />
+        <activity
+            android:name=".sabaragamuwa_middle"
+            android:exported="false" />
+        <activity
+            android:name=".sabaragamuwa_highest"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".central_middle"
+            android:exported="false" />
+        <activity
+            android:name=".central_lowest"
+            android:exported="false" />
+        <activity
+            android:name=".central_highest"
+            android:exported="false" />
+        <activity
+            android:name=".sign_in"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

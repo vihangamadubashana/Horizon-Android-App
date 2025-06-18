@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutUs">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="412dp"
+        android:layout_height="226dp"
+        android:fontFamily="serif"
+        android:paddingVertical="70dp"
+        android:text="ABOUT US"
+        android:textAlignment="center"
+        android:background="@drawable/wave"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="397dp"
+        android:layout_height="123dp"
+        android:text="          Welcome to our hotel Horizon app! We are dedicated to making your travel experience as easy and enjoyable as possible.
+
+Our app is designed to simplify the process of finding and booking hotels, giving you access to a wide range of options at competitive prices. Whether you're planning a quick business trip or a luxurious vacation, we're here to help you find the perfect accommodations."
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.058"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="388dp"
+        android:layout_height="204dp"
+        android:text="                   Our team is comprised of experienced travel professionals who are passionate about providing exceptional customer service. We work closely with our hotel partners to ensure that our app offers the best possible rates and options for our users.
+
+We understand that every traveler is unique, which is why we offer a variety of filters and search options to help you find the hotel that best meets your needs. From location and price to amenities and ratings, our app provides all the information you need to make an informed decision.We pride ourselves on our commitment to transparency and fairness. Our app is designed to be user-friendly, with clear and concise information about each hotel listed."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.044"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="392dp"
+        android:layout_height="142dp"
+        android:text="              We pride ourselves on our commitment to transparency and fairness. Our app is designed to be user-friendly, with clear and concise information about each hotel listed. We believe that every traveler deserves to have access to the best possible accommodations at a fair price.
+
+Thank you for choosing our hotel horizon app. We look forward to helping you book your next trip!"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

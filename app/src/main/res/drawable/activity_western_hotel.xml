@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_3"
+    tools:context=".Western_hotel">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/blue"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_3"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="Hilton"
+            app:titleTextColor="@color/white">
+
+            <ImageView
+                android:layout_width="327dp"
+                android:layout_height="226dp"
+                android:layout_gravity="center|end"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/hilton"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="99dp"
+                android:layout_height="59dp"
+                app:layout_collapseMode="pin"
+                />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_bg"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:text="The Hilton Colombo Hotel is a luxurious 5-star hotel located in the heart of Colombo, Sri Lanka's bustling capital city. The hotel offers breathtaking views of the Indian Ocean and the city skyline, and is renowned for its exceptional hospitality, sophisticated ambiance, and world-class amenities.
+
+The hotel features 382 spacious and well-appointed guest rooms and suites, each with plush bedding, elegant decor, and modern amenities such as flat-screen TVs, complimentary Wi-Fi, and 24-hour room service. The suites also offer separate living areas, and some offer stunning ocean views.
+
+The Hilton Colombo Hotel is renowned for its exceptional dining options, with a range of on-site restaurants and bars offering delicious cuisine from around the world. Guests can enjoy fine dining at the award-winning Graze Kitchen, or relax with a cocktail and stunning views at the rooftop lounge and bar, L.A.B.
+
+Other amenities at the Hilton Colombo Hotel include a fitness center, outdoor swimming pool, spa, and business center. The hotel also offers a range of event spaces, including a grand ballroom and several meeting rooms, making it the perfect choice for business and social events.
+
+Overall, the Hilton Colombo Hotel is a luxurious and sophisticated retreat in the heart of Colombo, offering world-class amenities, exceptional hospitality, and stunning views of the city and the Indian Ocean."
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_location"
+                android:layout_width="107dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="map"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Booking"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.79"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

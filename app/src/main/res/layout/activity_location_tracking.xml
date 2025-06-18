@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".location_tracking">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:background="@drawable/wave"
+        android:fontFamily="serif"
+        android:paddingVertical="70dp"
+        android:text="Direction"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etFromLocation"
+        android:layout_width="337dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Enter Your Location"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/baseline_location_on_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.197" />
+
+
+    <EditText
+        android:id="@+id/etToLocation"
+        android:layout_width="340dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_assistant_direction_24"
+        android:ems="10"
+        android:hint="Enter destination"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFromLocation"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnGetDirection"
+        android:layout_width="194dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#0099ff"
+        android:ems="10"
+        android:text="Get Direction"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etToLocation"
+        app:layout_constraintVertical_bias="0.208" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
